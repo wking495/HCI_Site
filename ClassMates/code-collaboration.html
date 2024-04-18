@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassMates</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div id="logo-nav-div">
+        <div id="logo-div">
+            <a href=#><img src="Graduation.png" alt="logo"></a>
+            <a href="index.html">
+                <button>Logout</button>
+            </a>
+        </div>
+
+        <div id="nav-div">
+            <h1></h1>
+            <nav class="nav-bar">
+                <ul>
+                    <li class="nav-item"><a href="logged_in.html">Home</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="services.html">Services</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="accessibility">
+            <div id="google_translate_element"></div>
+            <label for="slider" id="slider_label">Change Textsize</label>
+            <div class="slidecontainer">
+                <input type="range" min="12" max="18" value="12" class="slider" id="slider" step="2">
+            </div>
+        </div>
+    </div>
+    <sectionid="code_collab">
+
+        <iframe src="http://127.0.0.1:8080/?folder=/home/coder"
+            style="width:100%; height: 100%;; border:none;"></iframe>
+        <div id="vscode-server">
+            <!-- VSCode editor and collaboration features -->
+        </div>
+        </section>
+
+        <script src="script.js"></script>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    { pageLanguage: 'en' },
+                    'google_translate_element'
+                );
+            } 
+        </script>
+        <script type="text/javascript"
+            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <script>
+
+            // Call the function to display instructions when the page loads
+            window.onload = function () {
+                displayInstructions();
+
+                var helpLink = document.getElementById("help");
+                helpLink.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent default behavior of link
+                    displayInstructions(); // Display instructions alert again
+                });
+            }
+
+            // Function to display instructions for downloading and using the extension
+            function displayInstructions() {
+                alert("To collaborate using Code Together Live extension:\n\nStep 1: Go to the manage tab in the bottom left corner of the window.\nStep 2: Search for 'Code Together Live' extension.\nStep 3: Click on the 'install' button to install the extension.\nStep 4: Once installed, click on the 'CodeTogether' button in the bottom left corner of the window.\nStep 5: You can start a new coding session by clicking 'Start Coding Session' or join a friend by clicking 'Join Remote Session'. It will prompt you to enter the URL provided by your friend and voilà\nStep 6: You are now connected and can start collaborating in real-time!");
+            }
+        </script>
+</body>
+
+</html>
