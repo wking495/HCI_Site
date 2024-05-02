@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassMates</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="logo-nav-div">
+        <div id="logo-div">
+            <a href=#><img src="Graduation.png" alt="logo"></a>
+        </div>
+        <div id="nav-div">
+            <h1>Welcome to Classmates!</h1>
+            <nav class="nav-bar">
+                <ul>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="services.html">Services</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="accessibility">
+            <div id="google_translate_element"></div>
+            <label for="slider" id="slider_label">Change Textsize</label>
+            <div class="slidecontainer">
+                <input type="range" min="12" max="18" value="12" class="slider" id="slider" step="2">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main-content">
+        <h2>Upload a File</h2>
+        <form id="upload-form">
+            <input type="file" id="file-input">
+            <label for="file-description"> Add File Name:</label>
+            <textarea placeholder="Add a Title or Description" id="file-description"></textarea>
+            <label for="class-group">Select Class Group:</label>
+            <select id="class-group">
+                <option value="class1">Class 1</option>
+                <option value="class2">Class 2</option>
+                <option value="class2">Class 3</option>
+               
+            </select>
+            <button type="submit" id="upload-button">Upload File</button>
+        </form>
+    </div>
+   
+
+
+    <footer>
+        <div id="footer-div">
+            <a href=#><img src="facebook.png" alt="Facebook"></a>
+            <a href=#><img src="twitter.png" alt="Twitter"></a>
+            <a href=#><img src="instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+
+
+
+
+
+<script src="script.js"></script>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            { pageLanguage: 'en' },
+            'google_translate_element'
+        );
+    }
+</script>
+<script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+<style>#logo-nav-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: #555555;
+}
+
+
+#logo-div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10%;
+    background-color: #555555;
+    color: white;
+    padding-top: 20px;
+}
+
+
+#logo-div img {
+    max-width: 75px;
+    max-height: 75px;
+    padding-left: 10px;
+}
+
+
+#nav-div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #555555;
+    color: white;
+    padding-left: 80px;
+    margin-top: 20px;
+}
+
+
+h1 {
+    margin-bottom: 10px;
+}
+
+
+nav ul {
+    margin-top: 0;
+}
+
+
+nav ul li {
+    display: inline-block;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+#accessibility {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #555555;
+}
+
+
+#accessibility > * {
+    margin-bottom: 10px;
+}
+
+
+button {
+    margin-top: 10px;
+}
+
+
+#logo-nav-div {
+    margin-bottom: 20px;
+}
+
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 60%;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+
+#upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+#upload-form > * {
+    margin-bottom: 20px;
+}
+
+
+#upload-form input,
+#upload-form button {
+    width: 100%;
+    max-width: 300px;
+}
+
+
+#upload-form select {
+    width: 100%;
+    max-width: 120px;
+}
+
+
+#upload-form button {
+    width: 100%;
+    max-width: 350px;
+    background-color: #555;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+#upload-form button:hover {
+    background-color: #665;
+}
+
+
+#main-content label {
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#file-description {
+    width: 100%;
+    max-width: 350px;
+}
+
+
+#footer-div a {
+    display: inline-block;
+    margin: 0 10px;
+    padding-top: 5px;
+}
+
+
+#footer-div img {
+    width: 40px;
+    height: auto;
+}
+
+
+#footer-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 50px;
+    background-color: #555555;
+    justify-content: right;
+    align-items: center;
+    margin-top: 50px;
+}
+</style>
+
+
+    </html>

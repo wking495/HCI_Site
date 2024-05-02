@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Academic Tools</title>
+
+
+   <script src="script.js"></script>
+   <script type="text/javascript">
+       function googleTranslateElementInit() {
+           new google.translate.TranslateElement(
+               { pageLanguage: 'en' },
+               'google_translate_element'
+           );
+       }
+   </script>
+   <script type="text/javascript"
+       src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+   </head>
+   <body>
+    <div id="logo-nav-div">
+        <div id="logo-div">
+            <a href=#><img src="Graduation.png" alt="logo"></a>
+        </div>
+
+        <div id="nav-div">
+            <h1>Welcome to Classmates!</h1>
+            <nav class="nav-bar">
+                <ul>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="services.html">Services</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="accessibility">
+            <div id="google_translate_element"></div>
+            <label for="slider" id="slider_label">Change Textsize</label>
+            <div class="slidecontainer">
+                <input type="range" min="12" max="18" value="12" class="slider" id="slider" step="2">
+            </div>
+        </div>
+    </div>
+  
+       <div class="container">
+           <h1>Academic Tools</h1>
+  
+           <div class="tool">
+               <h2>Note-Taking</h2>
+               <p>Note-taking apps allow users to capture, organize, and store notes and research materials.</p>
+               <textarea id="noteInput" class="note-input" placeholder="Enter your note here"></textarea>
+               <button onclick="saveNote()" class="note-button">Save Note</button>
+           </div>
+  
+           <div class="tool">
+               <h2>Plagiarism Checker</h2>
+               <p>Plagiarism checkers help identify unoriginal content in academic papers and documents.</p>
+               <input type="text" id="plagiarismInput" class="plagiarism-input" placeholder="Enter text to check for plagiarism">
+               <button onclick="checkPlagiarism()" class="plagiarism-button">Check Plagiarism</button>
+               <div id="plagiarismResult" class="result"></div>
+           </div>
+       </div>
+  
+       <script>
+           function saveNote() {
+               var note = document.getElementById("noteInput").value;
+               if (note.trim() !== "") {
+              
+                   alert("Note saved successfully!");
+               } else {
+                   alert("Please enter a note before saving.");
+               }
+           }
+  
+           function checkPlagiarism() {
+               var textToCheck = document.getElementById("plagiarismInput").value;
+               if (textToCheck.trim() !== "") {
+
+
+                   var randomResult = Math.random() < 0.5 ? "No plagiarism detected." : "Plagiarism detected!";
+                   document.getElementById("plagiarismResult").innerText = randomResult;
+               } else {
+                   alert("Please enter text to check for plagiarism.");
+               }
+           }
+       </script>
+  
+   </body>
+
+
+
+
+</div>
+<footer>
+    <div id="footer-div">
+        <a href=#><img src="facebook.png" alt="Facebook"></a>
+        <a href=#><img src="twitter.png" alt="Twitter"></a>
+        <a href=#><img src="instagram.png" alt="Instagram"></a>
+        <!-- Add more social media icons and their respective links as needed -->
+    </div>
+</footer>
+
+
+
+
+   <script src="script.js"></script>
+   <script type="text/javascript">
+       function googleTranslateElementInit() {
+           new google.translate.TranslateElement(
+               { pageLanguage: 'en' },
+               'google_translate_element'
+           );
+       }
+   </script>
+   <script type="text/javascript"
+       src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+
+
+
+
+   <style>
+  
+   #logo-nav-div {
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+       min-height: 100px;
+       font-weight: bold;
+       text-align: center;
+       margin-left: auto;
+       margin-right: auto;
+       border-bottom: 1px solid white;
+       color: white;
+       background-color: #555555;
+     }
+   
+     
+       #logo-div {
+         display: flex;
+         flex-direction: column;
+         flex-basis: 10%;
+         background-color: #555555;
+         color: white;
+         padding-top: 20px;
+       }
+     
+       #logo-div img {
+         max-width: 75px;
+         max-height: 75px;
+         padding-left: 10px;
+       }
+     
+       #nav-div {
+         display: flex;
+         flex-direction: column;
+         flex-basis: 100%;
+         justify-content: center;
+         align-items: center;
+         background-color: #555555;
+         color: white;
+         padding-left: 80px;
+         margin-top: 20px;
+     }
+   
+     h1 {
+         margin-bottom: 10px;
+     }
+   
+     nav ul {
+         margin-top: 0;
+     }
+   
+     
+       nav ul li {
+         display: inline-block;
+       
+       }
+       nav ul li a {
+         color: white;
+         text-decoration: none;
+         margin-right: 20px;
+     }
+           body {
+               background-color: #f4f4f4;
+               margin: 0;
+               padding: 0;
+           }
+  
+           .container {
+               max-width: 800px;
+               margin: 50px auto;
+               padding: 20px;
+               background-color: #fff;
+               border-radius: 8px;
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           }
+  
+           h1 {
+               text-align: center;
+               margin-bottom: 20px;
+           }
+  
+           .tool {
+               margin-bottom: 20px;
+               padding: 20px;
+               border: 1px solid #ccc;
+               border-radius: 8px;
+               background-color: #f9f9f9;
+           }
+  
+           .tool h2 {
+               margin-top: 0;
+           }
+  
+           .tool p {
+               margin-bottom: 10px;
+           }
+  
+           .tool ul {
+               padding: 0;
+               margin-top: 10px;
+           }
+  
+           .tool ul li {
+               list-style: none;
+               margin-bottom: 5px;
+           }
+  
+           .tool ul li:before {
+               content: "•";
+               margin-right: 5px;
+               color: #007bff;
+           }
+  
+           .note-input {
+               width: calc(100% - 20px);
+               padding: 10px;
+               margin-bottom: 10px;
+               border: 1px solid #ccc;
+               border-radius: 4px;
+           }
+  
+           .note-button {
+               padding: 10px 20px;
+               background-color: #007bff;
+               color: #fff;
+               border: none;
+               border-radius: 4px;
+               cursor: pointer;
+               transition: background-color 0.3s;
+           }
+  
+           .note-button:hover {
+               background-color: #0056b3;
+           }
+  
+           .plagiarism-input {
+               width: calc(100% - 20px);
+               padding: 10px;
+               margin-bottom: 10px;
+               border: 1px solid #ccc;
+               border-radius: 4px;
+           }
+  
+           .plagiarism-button {
+               padding: 10px 20px;
+               background-color: #007bff;
+               color: #fff;
+               border: none;
+               border-radius: 4px;
+               cursor: pointer;
+               transition: background-color 0.3s;
+           }
+  
+           .plagiarism-button:hover {
+               background-color: #0056b3;
+           }
+  
+           .result {
+               margin-top: 10px;
+               padding: 10px;
+               border: 1px solid #ccc;
+               border-radius: 4px;
+               background-color: #f9f9f9;
+           }
+
+           #footer-div a {
+  display: inline-block;
+  margin: 0 10px;
+  padding-top: 5px;
+}
+
+#footer-div img {
+  width: 40px;
+  /* Adjust the size as needed */
+  height: auto;
+}
+
+#footer-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #555555;
+  justify-content: right;
+  align-items: center;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+}
+       </style>
+
+
+</head>
+<body>
+

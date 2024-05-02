@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+  box-sizing: border-box;
+}
+
+/*My styles */
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: black;
+  height: 100%;
+}
+
+header {
+  height: 20%;
+}
+
+
+#slider_label {
+  display: block;
+  clear: both;
+  float: right;
+  color: white;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#google_translate_element {
+  display: block;
+  clear: both;
+  float: right;
+  width: fit-content;
+  color: white;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 30px;
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #555555;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  margin-top: 50px;
+}
+
+
+.background-image {
+  background-image: url('classmates.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.content {
+  max-width: 100%;
+  /* Adjust the width as needed */
+  margin: 0 auto;
+  padding: 20px;
+  /* Add padding to create space around content */
+  color: white;
+  /* Set text color to contrast with the background image */
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Semi-transparent background for better readability */
+  padding: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  /* Adjust the margin as needed */
+}
+
+.section-align {
+  display: flex;
+  flex-direction: column;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-container {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-container ul {
+  list-style-type: none;
+  padding-right: 30px;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 5px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
+.container input {
+  display: block;
+  margin-bottom: 8px;
+  clear: both;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 1px black solid;
+  border-radius: 3px;
+}
+
+.container label {
+  display: flex;
+  margin-bottom: 8px;
+  clear: both;
+  color: black;
+  font-weight: bold;
+  width: fit-content;
+  justify-content: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+#code_collab {
+  width: 100%;
+  height: 80%;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.profile-picture-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  /* Make it circular */
+  width: 150px;
+  /* Adjust as needed */
+  height: 150px;
+  /* Adjust as needed */
+  object-fit: cover;
+  border: 4px solid black;
+  /* Optional: Add border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Optional: Add box shadow */
+}
+
+#home {
+  background-color: rgba(0, 0, 0, 0.7);
+  ;
+}
+
+#footer-div a {
+  display: inline-block;
+  margin: 0 10px;
+  padding-top: 5px;
+}
+
+#footer-div img {
+  width: 40px;
+  /* Adjust the size as needed */
+  height: auto;
+}
+
+#footer-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #555555;
+  justify-content: right;
+  align-items: center;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+}
+
+#logo-nav-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid white;
+  color: white;
+  background-color: #555555;
+}
+
+#logo-div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 10%;
+  background-color: #555555;
+  color: white;
+  padding-top: 20px;
+}
+
+#logo-div img {
+  max-width: 75px;
+  max-height: 75px;
+  padding-left: 10px;
+}
+
+#nav-div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #555555;
+  color: white;
+  padding-left: 80px;
+}
+
+nav ul li {
+  display: inline-block;
+  /* Display elements horizontally */
+}
+
+#accessibility {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 10px;
+  background-color: #555555;;
+  padding-bottom: 20px;
+}
+button{
+  margin-top:5px;
+  transition: transform 0.2s ease; /* Add smooth transition */
+}
+
+button:hover {
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+.nav-item {
+  transition: transform 0.2s ease; /* Add smooth transition */
+}
+
+.nav-item:hover {
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+form {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ClassMates</title>
+   <script src="script.js" defer></script>
+</head>
+<body>
+   <div id="logo-nav-div">
+       <div id="logo-div">
+           <a href=#><img src="Graduation.png" alt="logo"></a>
+       </div>
+       <div id="nav-div">
+           <h1>Welcome to Classmates</h1>
+           <nav class="nav-bar">
+               <ul>
+                   <li class="nav-item"><a href="logged_in.html">Home</a></li>
+                   <li class="nav-item"><a href="about.html">About</a></li>
+                   <li class="nav-item"><a href="services.html">Services</a></li>
+                   <li class="nav-item"><a href="contact.html">Contact</a></li>
+               </ul>
+           </nav>
+       </div>
+       <div id="accessibility">
+           <div id="google_translate_element"></div>
+           <label for="slider" id="slider_label">Change Textsize</label>
+           <div class="slidecontainer">
+               <input type="range" min="12" max="18" value="12" class="slider" id="slider" step="2">
+           </div>
+       </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+   <div class="container">
+       <h1>Class Groups</h1>
+      
+       <div class="class-groups">
+           <div class="class-group">Class A
+               <ul class="member-list">
+                   <li class="member-item">Riley M.</li>
+
+
+               </ul>
+           </div>
+           <div class="class-group">Class B
+               <ul class="member-list">
+                   <li class="member-item">Will K.</li>
+                   <li class="member-item">Anthony W.</li>
+
+
+               </ul>
+           </div>
+
+
+       </div>
+
+
+       <form id="addGroupForm">
+           <input type="text" id="groupName" placeholder="Enter group name" required>
+           <button type="submit">Create Group</button>
+       </form>
+
+       <input type="text" id="groupName" placeholder="Enter group name" required>
+       <button type="submit">Join Group</button>
+
+
+       <form id="addMemberForm">
+           <input type="text" id="memberName" placeholder="Enter member name" required>
+           <select id="selectGroup">
+               <option value="Class A">Class A</option>
+               <option value="Class B">Class B</option>
+           </select>
+           <button type="submit">Add Member</button>
+       </form>
+   </div>
+
+
+
+
+   </div>
+   <footer>
+       <div id="footer-div">
+           <a href=#><img src="facebook.png" alt="Facebook"></a>
+           <a href=#><img src="twitter.png" alt="Twitter"></a>
+           <a href=#><img src="instagram.png" alt="Instagram"></a>
+         
+       </div>
+   </footer>
+
+
+
+
+   <script src="script.js"></script>
+   <script type="text/javascript">
+       function googleTranslateElementInit() {
+           new google.translate.TranslateElement(
+               { pageLanguage: 'en' },
+               'google_translate_element'
+           );
+       }
+   </script>
+   <script type="text/javascript"
+       src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+
+
+
+
+   <style>#logo-nav-div {
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+       min-height: 100px;
+       font-weight: bold;
+       text-align: center;
+       margin-left: auto;
+       margin-right: auto;
+       border-bottom: 1px solid white;
+       color: white;
+       background-color: #555555;
+     }
+   
+     
+       #logo-div {
+         display: flex;
+         flex-direction: column;
+         flex-basis: 10%;
+         background-color: #555555;
+         color: white;
+         padding-top: 20px;
+       }
+     
+       #logo-div img {
+         max-width: 75px;
+         max-height: 75px;
+         padding-left: 10px;
+       }
+     
+       #nav-div {
+         display: flex;
+         flex-direction: column;
+         flex-basis: 100%;
+         justify-content: center;
+         align-items: center;
+         background-color: #555555;
+         color: white;
+         padding-left: 80px;
+         margin-top: 20px;
+     }
+   
+     h1 {
+         margin-bottom: 10px;
+     }
+   
+     nav ul {
+         margin-top: 0;
+     }
+   
+     
+       nav ul li {
+         display: inline-block;
+       
+       }
+       nav ul li a {
+         color: white;
+         text-decoration: none;
+         margin-right: 20px;
+     }
+     #accessibility {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding: 20px 0;
+       background-color: #555555;
+     }
+   
+     #accessibility > * {
+       margin-bottom: 10px;
+     }
+   
+     
+     
+       button{
+         margin-top:10px ;
+       }
+
+
+   
+     h2{
+       color: white;
+     }
+   
+   
+     #footer-div a {
+       display: inline-block;
+       margin: 0 10px;
+       padding-top: 5px;
+     }
+   
+   
+     #footer-div img {
+       width: 40px;
+     
+       height: auto;
+     }
+   
+   
+     #footer-div {
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+       min-height: 50px;
+       background-color: #555555;
+       justify-content: right;
+       align-items: center;
+       margin-top: 50px;}
+
+
+   body {
+           background-color: #f4f4f4;
+           margin: 0;
+           padding: 0;
+       }
+
+
+       .container {
+           max-width: 800px;
+           margin: 50px auto;
+           padding: 20px;
+           background-color: #fff;
+           border-radius: 8px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       }
+
+
+       h1 {
+           text-align: center;
+           margin-bottom: 20px;
+       }
+
+
+       .class-groups {
+           margin-bottom: 20px;
+       }
+
+
+       .class-group {
+           margin-bottom: 10px;
+           padding: 10px;
+           border: 1px solid #ccc;
+           border-radius: 4px;
+           background-color: #f9f9f9;
+       }
+
+
+       form {
+           text-align: center;
+       }
+
+
+       input[type="text"] {
+           padding: 8px;
+           margin-bottom: 10px;
+           width: 300px;
+           box-sizing: border-box;
+       }
+
+
+       button {
+           padding: 10px 20px;
+           background-color: #555555;
+           color: #fff;
+           border: none;
+           border-radius: 4px;
+           cursor: pointer;
+           transition: background-color 0.3s;
+       }
+
+
+       button:hover {
+           background-color: #333;
+       }
+
+
+       .member-list {
+           list-style: none;
+           padding: 0;
+       }
+
+
+       .member-item {
+           margin-bottom: 5px;
+       }
+
+
+   </style>
+
+
+
+
+</html>
+
+
+
+
+
